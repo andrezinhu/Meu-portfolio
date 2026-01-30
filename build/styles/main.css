@@ -23,23 +23,15 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 70%;
-  }
-}
-@media (max-width: 1023px) and (min-width: 768px) {
-  .container {
-    max-width: 80%;
-  }
-}
 header {
   padding-bottom: 24px;
 }
 header .profileAvatar {
   display: block;
+  width: 300px;
+  height: 390px;
   margin: 0 auto 24px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .profileBio {
   text-align: center;
@@ -88,4 +80,10 @@ header .profileAvatar {
 .projectsListItem a:hover {
   color: #0097e6;
   background-color: transparent;
+}
+@media (max-width: 767px) {
+  max-width: 70%;
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  max-width: 80%;
 }

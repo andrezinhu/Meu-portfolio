@@ -33,40 +33,35 @@ li{
     flex-direction: column;
     justify-content: center;
 
-    @media @breakpointMobile {
-        max-width: 70%;
-    }
-    
-    @media @breakpointTablet {
-        max-width: 80%;
-    }
     
 }
 
 header {
     padding-bottom: 24px;
-
+    
     .profileAvatar {
         display: block;
+        width: 300px;
+        height: 390px;
         margin: 0 auto 24px;
-        border-radius: 50%;
+        border-radius: 100%;
     }
 }
 
 .profileBio{
     text-align: center;
-
-
+    
+    
     &Name{
         .marginBottom8();
         font-size: 16px;
     }
-
+    
     &Subtitle{
         .marginBottom8();
         font-size: 14px;
     }
-
+    
     &Description{
         font-size: 14px;
         opacity: 0.7;
@@ -91,7 +86,7 @@ header {
 
 .projectsList{
     margin-top: 32px;
-
+    
     &Item{
         a{
             text-decoration: none;
@@ -111,6 +106,14 @@ header {
                 background-color: transparent;
             }
         }
-
+        
     }
+}
+
+@media @breakpointMobile {
+    max-width: 70%;
+}
+
+@media @breakpointTablet {
+    max-width: 80%;
 }
